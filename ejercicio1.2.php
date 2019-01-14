@@ -3,8 +3,11 @@ include("oficina.php");
 
 
 $oficina1= new Oficina();
-print_r( $oficina1->Listar() );
-echo $oficina1->Buscar();
-
-print_r($oficina1->Buscar(23));
+$dato=array();
+$dato['id_departamento']=null;
+$dato['nombre']="Edicio D";
+$dato['piso']="3";
+$dato['linea']=8;
+$dato['edificio']=3;
+echo $oficina1->Guardar($dato);
 ?>
