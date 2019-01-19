@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost/prog2/recursos/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="http://localhost/prog2/recursos/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="http://localhost/prog2/recursos/css/style.css" rel="stylesheet">
+    <script>
+    let objeto=null;
+    </script>
+</head>
+
+<body >
+
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">Sistema de inventarios</a>
+
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+              <!-- Links -->
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Inicio
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+
+
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Operaciones</a>
+                      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Opción 1</a>
+                          <a class="dropdown-item" href="#">Opción 2</a>
+                      </div>
+                  </li>
+
+              </ul>
+              <!-- Links -->
+          </div>
+          <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main>
+        <div class="container">
+        <!-- Material form login -->
+    
+        <!--Table-->
+           
+        <!--Table-->
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--Footer-->
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <script>
+        
+        
+        class persona {
+            
+            constructor(nombre = null, apellido = null, username = null ) {
+                this._nombre = nombre;
+                this._apellido = apellido;
+                this._username = username;
+                this.tabla=document.getElementById("personas");
+            }
+            set nombre(value) {
+                this._nombre = "nombre: " + value;
+            }
+            set apellido(value = 0) {
+                this._apellido = "apellido " + value;
+            }
+            set username(value = 0) {
+                this._username = "username " + value;
+            }
+            
+            get agregar() {
+                this.tabla.innerHTML=this.tabla.innerHTML+'<tr><th se="row">1</th><td>Jose</td><td>Dominguez</td><td>@mdo</td></tr>';
+                return true;
+            }
+        }
+        objeto = new persona();
+    </script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://localhost/prog2/recursos/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="http://localhost/prog2/recursos/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="http://localhost/prog2/recursos/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="http://localhost/prog2/recursos/js/mdb.min.js"></script>
+</body>
+
+</html>

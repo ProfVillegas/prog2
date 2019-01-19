@@ -21,11 +21,11 @@ class Oficina extends Modelo{
            if($datos['id_departamento']!=null){
                return "Operación inválida";
            } else {
-             echo   $sql= "INSERT INTO `departamento`( `nombre`, `linea`, `edificio`, `piso`) VALUES ('{$datos['nombre']}','{$datos['linea']}','{$datos['edificio']}','{$datos['piso']}')";
+                $sql= "INSERT INTO `departamento`( `nombre`, `linea`, `edificio`, `piso`) VALUES ('{$datos['nombre']}','{$datos['linea']}','{$datos['edificio']}','{$datos['piso']}')";
                 return $this->db->consulta($sql);
            } 
         } else{
-            echo $sql="UPDATE `departamento` SET `nombre`='".$datos['nombre']."',
+             $sql="UPDATE `departamento` SET `nombre`='".$datos['nombre']."',
             `linea`=".$datos['linea'].",
             `edificio`=".$datos['edificio'].",
             `piso`=".$datos['piso']." 
@@ -33,6 +33,15 @@ class Oficina extends Modelo{
              return $this->db->consulta($sql);
         }
     }
+        public function Eliminar($id=null){
+            if($this->Buscar($id)==false){
+                return "error: Registro no localizado";
+            } else {
+                $sql="DELETE FROM `departamento` WHERE id_departamento = {$id}";
+                return $this->db->consulta($sql);
+            }
+        }
+    
 
 }
 
